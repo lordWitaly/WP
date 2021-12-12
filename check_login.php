@@ -3,8 +3,8 @@
     session_start();
     echo 2;
     //echo getenv("MYAPP_CONFIG");
-    include("include/params.php");    
-   //include(getenv("MYAPP_CONFIG"));
+    //include("include/params.php");    
+    include(getenv("MYAPP_CONFIG"));
    echo 3;
 ?>
 <html>

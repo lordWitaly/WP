@@ -1,0 +1,7 @@
+создание переменной системной
+
+урок от 09.10.21
+таймкод 1.26.14
+
+echo getenv("MYAPP_CONFIG");   
+include(getenv("MYAPP_CONFIG"));
