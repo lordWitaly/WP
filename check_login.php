@@ -1,11 +1,8 @@
-<?php
-    echo 1;
-    session_start();
-    echo 2;
+<?php    
+    session_start();    
     //echo getenv("MYAPP_CONFIG");
     //include("include/params.php");    
-    include(getenv("MYAPP_CONFIG"));
-   echo 3;
+    include(getenv("MYAPP_CONFIG"));   
 ?>
 <html>
     <head>
