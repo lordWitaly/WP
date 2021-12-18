@@ -2,7 +2,7 @@
     session_start();    
     //echo getenv("MYAPP_CONFIG");
     //include("include/params.php");    
-    include(getenv("MYAPP_CONFIG"));   
+    include ('/var/www/html/params.php');   
 ?>
 <html>
     <head>

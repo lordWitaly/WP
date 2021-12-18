@@ -13,7 +13,7 @@ $u = $_SESSION["user"];
 // 4. Код, уязвимый для Sql-injection
 
 //Первые три проблемы исправлены ниже:
-include(getenv("MYAPP_CONFIG"));
+include ('/var/www/html/params.php');
 $conn = mysqli_connect($DB_URL,$DB_USER,$DB_PWD,$DB_NAME);
 echo "INSERT INTO log(Number1,Number2,Result,UserID) VALUES($x,$y,$z,'$u')";
 $sql = "INSERT INTO log(Number1,Number2,Result,UserID) VALUES($x,$y,$z,'$u')";
